@@ -1,12 +1,11 @@
 /** @type { import('@storybook/react-vite').StorybookConfig } */
 const config = {
-  stories: ["../src/stories/**/*.stories.@(js|jsx)"],
-  staticDirs: ["../public"],
+  stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
-    "@storybook/addon-links",
+    "@storybook/addon-onboarding",
     "@storybook/addon-essentials",
+    "@chromatic-com/storybook",
     "@storybook/addon-interactions",
-    "@storybook/addon-a11y",
   ],
   framework: {
     name: "@storybook/react-vite",
